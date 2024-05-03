@@ -17,7 +17,7 @@ const nextConfig = {
 }
 
 // Add the configured Optimizely DXP URL to the image domains
-const optimizelyDxpUrl = optiConfig.dxp_url
+const optimizelyDxpUrl = process.env.OPTIMIZELY_CMS_URL
 if (optimizelyDxpUrl) {
     const optimizelyDxpHost = new URL(optimizelyDxpUrl)
 
